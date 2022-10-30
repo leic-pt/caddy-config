@@ -1,0 +1,7 @@
+{
+    auto_https off
+}
+
+http://dev.leic.pt {
+    redir https://duckduckgo.com
+}
