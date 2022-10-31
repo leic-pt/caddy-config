@@ -62,6 +62,14 @@ http://metro.leic.pt {
 	redir https://www.metrolisboa.pt/viajar/proximoscomboios
 }
 
+http://isthub.pt {
+	redir https://discord.gg/tyKBYhja95
+}
+
+http://www.isthub.pt {
+	redir https://discord.gg/tyKBYhja95
+}
+
 {$MAGIC_LINK_1} {
 	redir {$MAGIC_LINK_1_TARGET}
 }
