@@ -1,11 +1,14 @@
-# fly.toml file generated for leic-pt-webserver on 2022-10-30T09:31:42Z
+# fly.toml file generated for leic-pt-web on 2022-10-31T21:08:52Z
 
-app = "leic-pt-caddy"
+app = "leic-pt-web"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
 
 [env]
+
+[deploy]
+  strategy = "bluegreen"
 
 [experimental]
   allowed_public_ports = []
@@ -13,7 +16,7 @@ processes = []
 
 [[services]]
   http_checks = []
-  internal_port = 80
+  internal_port = 8080
   processes = ["app"]
   protocol = "tcp"
   script_checks = []

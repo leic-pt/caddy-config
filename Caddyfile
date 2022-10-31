@@ -1,7 +1,83 @@
 {
-    auto_https off
+	auto_https off
+	admin off
+	http_port 8080
+}
+
+http://leic.pt {
+	header Access-Control-Allow-Origin *
+	redir https://resumos.leic.pt{uri}
+}
+
+http://www.leic.pt {
+	header Access-Control-Allow-Origin *
+	redir https://leic.pt{uri}
+}
+
+http://discord.leic.pt {
+	redir https://discord.gg/tyKBYhja95
+}
+
+http://ist.leic.pt {
+	redir https://fenix.tecnico.ulisboa.pt/cursos/leic-a
+}
+
+http://fenix.leic.pt {
+	redir https://fenix.tecnico.ulisboa.pt/cursos/leic-a
+}
+
+http://pessoa.leic.pt {
+	redir https://fenix.tecnico.ulisboa.pt/login?callback=https://fenix.tecnico.ulisboa.pt/messaging/search/search-person
+}
+
+http://covid.leic.pt {
+	redir https://tecnico.ulisboa.pt/pt/coronavirus/testes-a-comunidade/
+}
+
+http://repo.leic.pt {
+	redir https://github.com/diogotcorreia/resumos-leic
+}
+
+http://po.leic.pt {
+	redir https://web.tecnico.ulisboa.pt/~david.matos/w/pt/index.php/Programa%C3%A7%C3%A3o_com_Objectos
+}
+
+http://qucs.leic.pt {
+	redir https://forms.gle/87mf4yNo2MfFYLPr5
+}
+
+http://horarios.leic.pt {
+	redir https://web.tecnico.ulisboa.pt/joanasesinando/gerador-horarios/
+}
+
+http://docs.leic.pt {
+	redir https://gitlab.rnl.tecnico.ulisboa.pt/delegados-leic/docs-delegados
+}
+
+http://delegados.leic.pt {
+	redir https://gitlab.rnl.tecnico.ulisboa.pt/delegados-leic/docs-delegados
+}
+
+http://metro.leic.pt {
+	redir https://www.metrolisboa.pt/viajar/proximoscomboios
+}
+
+http://isthub.pt {
+	redir https://discord.gg/tyKBYhja95
+}
+
+http://www.isthub.pt {
+	redir https://discord.gg/tyKBYhja95
+}
+
+{$MAGIC_LINK_1} {
+	redir {$MAGIC_LINK_1_TARGET}
+}
+
+{$MAGIC_LINK_2} {
+	redir {$MAGIC_LINK_2_TARGET}
 }
 
 http://dev.leic.pt {
-    redir https://duckduckgo.com
+	respond "Caddy is working!"
 }
