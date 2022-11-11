@@ -35,7 +35,7 @@ http://covid.leic.pt {
 }
 
 http://repo.leic.pt {
-	redir https://github.com/diogotcorreia/resumos-leic
+	redir https://github.com/leic-pt/resumos-leic
 }
 
 http://po.leic.pt {
