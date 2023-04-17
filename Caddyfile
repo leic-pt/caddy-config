@@ -42,6 +42,10 @@ http://po.leic.pt {
 	redir https://web.tecnico.ulisboa.pt/~david.matos/w/pt/index.php/Programa%C3%A7%C3%A3o_com_Objectos
 }
 
+http://co.leic.pt {
+	redir https://web.tecnico.ulisboa.pt/~david.matos/w/pt/index.php/Compiladores
+}
+
 http://qucs.leic.pt {
 	redir https://forms.gle/87mf4yNo2MfFYLPr5
 }
