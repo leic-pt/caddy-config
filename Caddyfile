@@ -75,6 +75,9 @@ http://www.isthub.pt {
 }
 
 {$MAGIC_LINK_1} {
+	basicauth * {
+		user $2a$14$1OgrAiJkvmM.2R2GpAWB.O61nD9MISmnRWPc8.VsEVvLD3jij9Lb2
+	}
 	redir {$MAGIC_LINK_1_TARGET}
 }
 
