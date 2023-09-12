@@ -78,7 +78,12 @@ http://www.isthub.pt {
 	basicauth {
 		user $2a$14$1OgrAiJkvmM.2R2GpAWB.O61nD9MISmnRWPc8.VsEVvLD3jij9Lb2
 	}
-	redir {$MAGIC_LINK_1_TARGET}
+	# Redir gets evaluated before basicauth, so do a manual 302 instead
+	#redir {$MAGIC_LINK_1_TARGET}
+	header Location {$MAGIC_LINK_1_TARGET}
+	respond 302 {
+		close
+	}
 }
 
 {$MAGIC_LINK_2} {
