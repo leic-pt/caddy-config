@@ -8,7 +8,8 @@ processes = []
 [env]
 
 [deploy]
-  strategy = "bluegreen"
+# Fly apps v2 doesn't support bluegreen strategy :( (yet?)
+  strategy = "canary"
 
 [experimental]
   allowed_public_ports = []
