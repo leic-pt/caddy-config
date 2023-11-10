@@ -74,7 +74,7 @@ http://www.isthub.pt {
 	redir https://discord.gg/tyKBYhja95
 }
 
-http://fertagus.leic.pt.com {
+http://fertagus.leic.pt {
 	redir https://www.fertagus.pt/pt/horarios/fertagus
 }
 
